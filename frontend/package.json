@@ -1,0 +1,35 @@
+{
+  "name": "estudiantes-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run --exclude '**/*.integration.test.*'",
+    "test:integration": "vitest run integration",
+    "backend": "mvn -f ../backend/pom.xml spring-boot:run",
+    "cy:open": "cypress open --e2e --browser chrome",
+    "cy:run": "cypress run --e2e",
+    "e2e": "start-server-and-test backend http://localhost:8080/api/estudiantes dev http://localhost:5173 cy:run"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@vitejs/plugin-react": "^6.2.1",
+    "cypress": "^16.2.1",
+    "jsdom": "^29.1.1",
+    "msw": "^3.0.3",
+    "start-server-and-test": "^3.0.13",
+    "vite": "^8.3.5",
+    "vitest": "^5.1.0"
+  }
+}

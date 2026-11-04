@@ -1,0 +1,12 @@
+{
+  "ana": {
+    "nombre": "Ana Pérez",
+    "email": "ana@correo.com",
+    "programa": "Ingeniería de Software"
+  },
+  "luis": {
+    "nombre": "Luis Gómez",
+    "email": "luis@correo.com",
+    "programa": "Ingeniería de Sistemas"
+  }
+}
